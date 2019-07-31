@@ -1,0 +1,39 @@
+{
+    "name": "helick/contracts",
+    "type": "library",
+    "description": "Common contracts to ease development process",
+    "keywords": [
+        "helick",
+        "contracts"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/helick/contracts/issues",
+        "source": "https://github.com/helick/contracts"
+    },
+    "authors": [
+        {
+            "name": "Evgenii Nasyrov",
+            "email": "evgenii@helick.io"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Helick\\Contracts\\": "src/"
+        }
+    },
+    "scripts": {
+        "lint": [
+            "phpcs -p --standard=psr2 src"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
